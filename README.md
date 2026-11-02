@@ -2,7 +2,7 @@
 
 **Ton appli pour noter tes absences, ne pas oublier tes médicaments et prévenir tes proches si besoin.**
 
-## ⬇️ [Télécharger Repère pour Android](https://github.com/alternaogroup-gif/repere-app/releases/latest/download/Repere.apk)
+## ⬇️ [Télécharger Repère pour Android](https://github.com/alternaogroup-gif/repere-app/raw/main/Repere.apk)
 
 ---
 
