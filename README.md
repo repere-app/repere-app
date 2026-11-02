@@ -2,81 +2,114 @@
 
 **Ton appli pour noter tes absences, ne pas oublier tes médicaments et prévenir tes proches si besoin.**
 
+Français · [Nederlands](#nederlands) · [English](#english)
+
 ## ⬇️ [Télécharger Repère pour Android](https://github.com/alternaogroup-gif/repere-app/raw/main/Repere.apk)
+
+Repère est en **test privé** : pour l'utiliser, il te faut un **code d'accès** et un **mot de passe** fournis par l'équipe Repère.
 
 ---
 
 ## 1. Installer l'appli
 
 1. Sur ton téléphone Android, touche le lien **Télécharger Repère** ci-dessus.
-2. Quand le téléchargement est fini, ouvre le fichier **Repere.apk** (dans la notification ou dans « Téléchargements »).
+2. Ouvre le fichier **Repere.apk** (dans la notification ou dans « Téléchargements »).
 3. Si Android affiche « Pour votre sécurité, votre téléphone n'est pas autorisé à installer des applis inconnues » : touche **Paramètres**, active **Autoriser cette source**, puis reviens en arrière.
-4. Touche **Installer**, puis **Ouvrir**.
+4. Touche **Installer**, puis **Ouvrir**. Si Google Play Protect affiche un avertissement, touche **Installer quand même** : l'appli ne vient pas encore du Play Store.
 
-Si Google Play Protect affiche un avertissement, c'est normal : l'appli ne vient pas du Play Store. Touche **Installer quand même**.
+Tu as déjà une ancienne version ? Installe simplement la nouvelle par-dessus : tes données sont gardées.
 
-## 2. Le premier réglage (5 minutes)
+## 2. Activer ton accès
 
-Va dans l'onglet **Réglages**, en bas à droite :
+1. À la première ouverture, l'appli affiche ton **code appareil** (8 caractères). Touche **Partager** et envoie-le à l'équipe Repère.
+2. Tu reçois en retour ton **nom de profil**, ton **code d'accès** et ton **mot de passe**. Entre-les exactement comme écrits.
+3. Choisis ton **code PIN** (4 à 6 chiffres). Il sera demandé à chaque ouverture ; tu peux aussi utiliser ton empreinte.
 
-- **Ton prénom**
-- **Médicaments** : touche « Ajouter une prise » pour chaque prise de la journée (par exemple Dépakine à 8 h 00, puis Dépakine à 20 h 00).
-- **Proches à prévenir** : ajoute Alan (et d'autres si tu veux) avec leur numéro.
-- Touche **Envoyer un SMS de test** : ton proche doit recevoir un message.
-- Touche **Retirer de l'économie de batterie**, puis **Autoriser** : sinon le téléphone peut couper les rappels.
-- **Mémoire audio** (conseillé) : le téléphone garde en continu les 2 dernières minutes de son. Quand tu appuies sur « absence », l'enregistrement commence donc **avant** ton appui. Rien n'est gardé si tu n'appuies pas.
+Ton code ne fonctionne que sur ton téléphone : merci de ne pas le partager.
 
-Quand l'appli demande l'accès au **micro**, à la **position**, aux **SMS** et aux **notifications**, réponds **Autoriser**. Ça sert à enregistrer, savoir où tu étais et prévenir tes proches.
+**Toujours accessible sans code PIN** : le bouton « Je viens d'avoir une absence », l'alerte et la fiche d'urgence. En cas de crise, personne ne doit chercher un code.
 
-## 3. Après une absence
+PIN oublié ? Touche **Code PIN oublié** et entre ton mot de passe (ou le code administrateur donné par l'équipe Repère), puis change ton PIN dans **Réglages**.
 
-Touche le gros bouton vert **« Je viens d'avoir une absence »**.
+## 3. Le premier réglage
 
-- L'enregistrement démarre tout de suite. **Raconte ce dont tu te souviens** : où tu étais, ce que tu faisais, comment tu te sens. Même si c'est confus, c'est justement utile.
-- L'heure et le lieu sont notés automatiquement.
-- Touche le bouton **Stop** quand tu as fini. Tu peux réécouter, et le texte s'écrit tout seul.
-- Indique si tu veux la durée, ton stress, et ce qu'un proche a vu.
-- Touche **Enregistrer le débrief**.
+Dans l'onglet **Réglages** :
 
-**Raccourci :** reste appuyée sur l'icône Repère de ton écran d'accueil, puis touche **Absence**. C'est encore plus rapide.
+- **Langue** : français, néerlandais ou anglais.
+- **Apparence** : choisis tes couleurs, le mode clair ou sombre et la taille du texte.
+- **Rappels de médicaments** : touche « Ajouter une prise » pour chaque prise de la journée.
+- **Proches à prévenir** : ajoute un ou plusieurs proches, puis touche **Envoyer un SMS de test**.
+- **Mode crise** : la sirène sonne après une alerte pour prévenir les gens autour (tu peux la couper).
+- **Retirer de l'économie de batterie** : sinon le téléphone peut couper les rappels.
+- **Mémoire audio** (conseillé) : l'enregistrement commence 2 minutes **avant** ton appui sur « absence ».
 
-## 4. Les médicaments
+Quand l'appli demande l'accès au micro, à la position, aux SMS et aux notifications, réponds **Autoriser**.
 
-- Une alarme sonne à l'heure de chaque prise.
-- Touche **Pris**, dans la notification ou sur l'accueil.
-- Si tu oublies, l'alarme revient après 15 minutes, puis après 30 minutes.
+## 4. Après une absence
 
-## 5. Le stress et le sommeil
+Touche le gros bouton **« Je viens d'avoir une absence »**. L'enregistrement démarre tout de suite : raconte ce dont tu te souviens, même si c'est confus. L'heure et le lieu sont notés automatiquement, le texte s'écrit tout seul. Touche **Stop**, complète si tu veux, puis **Enregistrer le débrief**.
 
-Sur l'accueil, touche un chiffre de **1 (calme) à 5 (très stressée)** quand tu veux, et indique tes heures de sommeil le matin. C'est rapide et ça aide à comprendre ce qui déclenche les absences.
+## 5. Les médicaments
+
+Une alarme sonne à l'heure de chaque prise. Touche **Pris** (dans la notification, sur l'accueil ou sur le widget). Si tu oublies, l'alarme revient après 15 puis 30 minutes.
 
 ## 6. Si tu as besoin d'aide
 
-- Touche le bouton orange **Alerter mes proches**.
-- Tu as **5 secondes pour annuler**. Ensuite, un SMS avec ta position part tout seul vers tes proches.
-- Tu peux ensuite appeler un proche ou le **112** en un appui.
+Touche le bouton orange **Alerter mes proches**. Tu as **5 secondes pour annuler**, puis :
 
-**Fiche d'urgence :** dans l'onglet **Sortie**, touche **Montrer ma fiche d'urgence**. Elle explique aux gens autour de toi quoi faire et qui appeler. Elle s'affiche même téléphone verrouillé.
+- un SMS avec ta position part vers tes proches ;
+- l'écran reste allumé sur ta **fiche d'urgence** (quoi faire, qui appeler) ;
+- la **sirène** sonne pour alerter les gens autour. Le grand bouton **Arrêter la sirène** la coupe.
 
 ## 7. Quand tu sors
 
-Dans l'onglet **Sortie**, touche **Je sors** : tes proches reçoivent un SMS avec ta position. En rentrant, touche **Je suis rentrée**.
+Onglet **Sortie** › **Je sors** : tes proches reçoivent un SMS avec ta position. En rentrant, touche **Je suis rentrée**.
 
-Pour être suivie en direct, active aussi le partage de position de Google Maps : Google Maps › ta photo › **Partage de position**.
+## 8. Ton dossier
 
-## 8. Le suivi et le neurologue
+Onglet **Dossier** :
 
-L'onglet **Suivi** montre tes absences, ton stress et tes médicaments sur une semaine, un mois ou 3 mois, avec ce qui revient souvent.
+- **Traitements** : note chaque médicament avec son dosage et sa date de début. Quand le dosage change, touche **Changer le dosage** : l'ancien est gardé dans l'historique, avec le nombre d'absences pendant chaque période.
+- **Examens** : ajoute un PDF (EEG, IRM, prise de sang, compte rendu…) ou prends en photo un document. Tu peux l'ouvrir ou l'envoyer à tout moment.
 
-Avant un rendez-vous, touche **Résumé PDF pour le neurologue**, puis envoie-le par e-mail ou WhatsApp, ou montre-le sur ton téléphone.
+## 9. Le suivi et le neurologue
+
+L'onglet **Suivi** montre tes absences, ton stress et tes médicaments sur une semaine, un mois ou 3 mois. Avant un rendez-vous, touche **Résumé PDF pour le neurologue** : il contient aussi l'historique des traitements et la liste des examens.
+
+## 10. Les widgets
+
+Reste appuyée sur ton écran d'accueil › **Widgets** › **Repère** :
+
+- **Repère : raccourcis** : Absence, Je sors et Alerte en un appui.
+- **Repère : aujourd'hui** : prochain médicament avec le bouton **Pris**, et les stats du jour.
 
 ## Tes données
 
-Tout reste **uniquement sur ton téléphone**. Rien n'est envoyé sur internet, sauf les SMS à tes proches et la recherche du nom du lieu. Pense à faire de temps en temps **Réglages › Sauvegarder mes données**.
+Tout reste **uniquement sur ton téléphone**. Rien n'est envoyé sur internet, sauf les SMS à tes proches, la recherche du nom du lieu et une vérification de ton accès à l'ouverture. Pense à faire de temps en temps **Réglages › Sauvegarder mes données**.
 
-## Mettre à jour
+---
 
-Quand une nouvelle version est annoncée, retélécharge-la avec le lien en haut de cette page et installe-la par-dessus : tes données sont gardées.
+## Nederlands
+
+Repère is een app om je absences te noteren, je medicijnen niet te vergeten en je naasten te verwittigen. Ze is in **privétest**: je hebt een **toegangscode** en een **wachtwoord** van het Repère-team nodig.
+
+1. Download **[Repere.apk](https://github.com/alternaogroup-gif/repere-app/raw/main/Repere.apk)** op je Android-telefoon, open het bestand en tik op **Installeren** (sta indien nodig « onbekende apps » toe).
+2. Bij de eerste opening toont de app je **toestelcode**. Stuur die naar het Repère-team.
+3. Vul de ontvangen **profielnaam**, **toegangscode** en **wachtwoord** in en kies je **pincode**.
+4. Kies **Nederlands** in **Instellingen › Taal**.
+
+Alarm, noodkaart en de knop « Ik had net een absence » blijven altijd bereikbaar zonder pincode.
+
+## English
+
+Repère is an app to note your absence seizures, remember your medication and alert your contacts. It is in **private testing**: you need an **access code** and a **password** from the Repère team.
+
+1. Download **[Repere.apk](https://github.com/alternaogroup-gif/repere-app/raw/main/Repere.apk)** on your Android phone, open the file and tap **Install** (allow "unknown apps" if asked).
+2. On first launch, the app shows your **device code**. Send it to the Repère team.
+3. Enter the **profile name**, **access code** and **password** you received, then choose your **PIN**.
+4. Choose **English** in **Settings › Language**.
+
+The alert, the emergency card and the "I just had an absence" button always work without the PIN.
 
 ---
 
