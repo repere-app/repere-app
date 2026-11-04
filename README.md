@@ -1,3 +1,3 @@
 # Repère
 
-## ⬇️ [Télécharger l'application](https://github.com/alternaogroup-gif/repere-app/raw/main/Repere.apk)
+## ⬇️ [Télécharger l'application](https://github.com/repere-app/repere-app/raw/main/Repere.apk)
