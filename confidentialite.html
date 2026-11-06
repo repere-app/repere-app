@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repère · Confidentialité et conditions</title>
+<meta name="description" content="Politique de confidentialité, conditions d'utilisation et avertissement médical de l'application Repère.">
+<link rel="icon" type="image/svg+xml" href="img/icone.svg">
+<link rel="icon" type="image/png" sizes="512x512" href="img/icone-512.png">
+<meta name="theme-color" content="#17383A">
+<style>
+:root{
+  --bg:#F4F7F6; --surface:#FFFFFF; --line:#DCE5E2; --ink:#14302A; --muted:#4A5F5A;
+  --accent:#0F766E; --soft:#E3F2EE; --warn-soft:#FFF4E5; --alert:#C2410C;
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0E1A18; --surface:#172623; --line:#2A3D39; --ink:#E6F0EE; --muted:#A3B8B3;
+  --accent:#2BB3A0; --soft:#12352F; --warn-soft:#3A2414; --alert:#FB923C; color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6}
+.wrap{max-width:820px;margin:0 auto;padding:0 16px}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:2}
+header .wrap{display:flex;align-items:center;gap:12px;min-height:64px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--ink);text-decoration:none;margin-right:auto}
+.brand svg{width:32px;height:32px}
+.brand .base{fill:var(--ink)}
+.langs{display:flex;gap:6px}
+.langs button{font:inherit;font-size:14px;font-weight:700;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:18px;padding:6px 12px;cursor:pointer}
+.langs button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+main{padding:28px 0 48px}
+h1{font-size:30px;line-height:1.2;margin:0 0 6px}
+h2{font-size:22px;margin:36px 0 10px;padding-top:8px}
+h3{font-size:18px;margin:22px 0 6px}
+p,li{margin:0 0 10px}
+ul{padding-left:22px;margin:0 0 12px}
+.muted{color:var(--muted)}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 20px;margin:16px 0}
+.box.soft{background:var(--soft);border-color:transparent}
+.box.warn{background:var(--warn-soft);border-color:transparent}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0}
+.grid .box{margin:0}
+.grid b{display:block;margin-bottom:4px}
+table{width:100%;border-collapse:collapse;margin:8px 0 14px;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:9px 8px;border-bottom:1px solid var(--line)}
+th{font-weight:700}
+a{color:var(--accent)}
+nav.toc{columns:2;column-gap:24px;font-size:15px}
+nav.toc a{display:block;padding:2px 0}
+@media (max-width:560px){nav.toc{columns:1} h1{font-size:26px} table{font-size:14px}}
+article[hidden]{display:none}
+footer{border-top:1px solid var(--line);padding:20px 0 32px;font-size:15px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="./"><svg viewBox="0 0 200 200" aria-hidden="true"><g transform="translate(0,-13)"><ellipse class="base" cx="100" cy="152" rx="58" ry="24"/><ellipse cx="96" cy="102" rx="40" ry="20" fill="#FF8B5E" transform="rotate(-6 96 102)"/><ellipse cx="104" cy="64" rx="24" ry="14" fill="#FFB547" transform="rotate(8 104 64)"/></g></svg>Repère</a>
+    <div class="langs" role="group" aria-label="Langue / Taal / Language">
+      <button data-l="fr">FR</button><button data-l="nl">NL</button><button data-l="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ======================= FRANÇAIS ======================= -->
+<article lang="fr" data-lang="fr">
+<h1>Confidentialité et conditions d'utilisation</h1>
+<p class="muted">Application Repère et site repere-app.github.io · Version du 6 novembre 2026</p>
+
+<div class="grid">
+  <div class="box soft"><b>Tes données restent sur ton téléphone</b>Repère n'a pas de serveur qui reçoit ton suivi. Personne chez Repère ne peut le lire.</div>
+  <div class="box soft"><b>Pas de compte, pas de pub</b>Aucune publicité, aucun traceur, aucune revente de données.</div>
+  <div class="box soft"><b>C'est toi qui choisis</b>Rien ne part du téléphone sans une action de ta part ou un réglage que tu as activé (SMS d'alerte, partage du PDF…).</div>
+</div>
+
+<div class="box warn"><b>Repère ne remplace pas un médecin.</b> Ce n'est pas un dispositif médical : l'appli ne pose pas de diagnostic et ne détecte pas les crises de façon garantie. En cas d'urgence, appelle le 112.</div>
+
+<nav class="toc" aria-label="Sommaire">
+  <a href="#fr-qui">1. Qui est responsable</a>
+  <a href="#fr-app">2. Les données dans l'appli</a>
+  <a href="#fr-sortie">3. Ce qui peut quitter le téléphone</a>
+  <a href="#fr-perm">4. Les autorisations</a>
+  <a href="#fr-proches">5. Les proches</a>
+  <a href="#fr-site">6. Le site et le formulaire</a>
+  <a href="#fr-duree">7. Durée de conservation</a>
+  <a href="#fr-droits">8. Tes droits</a>
+  <a href="#fr-secu">9. Sécurité</a>
+  <a href="#fr-mineurs">10. Mineurs</a>
+  <a href="#fr-cond">11. Conditions d'utilisation</a>
+  <a href="#fr-modif">12. Modifications</a>
+</nav>
+
+<h2 id="fr-qui">1. Qui est responsable</h2>
+<p>Repère est un projet personnel et gratuit, créé en Belgique par Alan Duroisin, avec sa famille. Il est responsable du traitement des données du site et du formulaire de contact.</p>
+<p>Contact pour toute question sur tes données : <a href="mailto:repere.contact.be@gmail.com">repere.contact.be@gmail.com</a>.</p>
+
+<h2 id="fr-app">2. Les données dans l'appli</h2>
+<p>Ce que tu notes dans Repère est enregistré <b>uniquement dans la mémoire privée de l'appli, sur ton téléphone</b>. Il s'agit de :</p>
+<ul>
+  <li>ton profil : prénom, genre, langue, réglages ;</li>
+  <li>tes traitements : médicaments, heures de prise, prises cochées, stocks de boîtes, historique des dosages ;</li>
+  <li>tes absences : date, heure, lieu, enregistrement audio, texte transcrit, contexte, récit du témoin, tests de récupération ;</li>
+  <li>ton suivi : stress, sommeil, jours de règles (si tu actives le suivi du cycle), rendez-vous, questions pour le médecin, examens (EEG, IRM…) ;</li>
+  <li>les noms et numéros des proches à prévenir.</li>
+</ul>
+<p>Beaucoup de ces informations sont des <b>données de santé</b>, qui sont particulièrement protégées par le RGPD. Elles sont traitées sur ton téléphone, à ta demande, pour te rendre service. Repère ne les reçoit pas, ne les analyse pas à distance et ne les partage avec personne.</p>
+
+<h2 id="fr-sortie">3. Ce qui peut quitter le téléphone</h2>
+<table>
+  <tr><th>Quand</th><th>Quoi, et vers qui</th></tr>
+  <tr><td>Alerte, sortie surveillée, rappel de médicament manqué, test</td><td>Un SMS est envoyé <b>aux proches que tu as choisis</b>, par ton opérateur téléphonique. Il peut contenir ta position (lien Google Maps) et le nom du lieu. Ces envois automatiques peuvent être coupés dans les Réglages.</td></tr>
+  <tr><td>Transcription du débrief vocal</td><td>Quand c'est possible, la voix est transformée en texte <b>sur le téléphone</b>. Sinon, Android utilise le service de reconnaissance vocale de Google, qui reçoit l'audio le temps de la transcription.</td></tr>
+  <tr><td>Position (alerte, sortie surveillée, lieu de l'absence)</td><td>Elle est obtenue par les services de localisation de Google Play sur ton téléphone.</td></tr>
+  <tr><td>Sauvegarde du téléphone</td><td>Si la sauvegarde Google est activée sur ton téléphone, Android peut copier les données de l'appli dans ton compte Google (de façon chiffrée sur les versions récentes d'Android). Tu peux la désactiver dans les réglages du téléphone.</td></tr>
+  <tr><td>Partage du résumé PDF ou d'une sauvegarde</td><td>Uniquement quand tu appuies sur partager, vers l'appli ou la personne que tu choisis (mail, messagerie, médecin…).</td></tr>
+  <tr><td>Vérification de l'accès (version de test)</td><td>L'appli lit une liste publique sur GitHub pour savoir si l'accès de testeur est toujours ouvert. Aucune donnée personnelle n'est envoyée ; GitHub voit seulement l'adresse internet du téléphone, comme pour n'importe quelle page web.</td></tr>
+</table>
+<p>Ces services (opérateur, Google, GitHub) appliquent leurs propres règles de confidentialité.</p>
+
+<h2 id="fr-perm">4. Les autorisations</h2>
+<ul>
+  <li><b>Micro</b> : enregistrer le débrief vocal et, si tu l'actives, garder en mémoire les dernières minutes de son.</li>
+  <li><b>Position</b> : indiquer où tu es dans les SMS d'alerte et noter le lieu de l'absence.</li>
+  <li><b>SMS</b> : prévenir tes proches automatiquement.</li>
+  <li><b>Notifications, alarmes, écran verrouillé</b> : rappels de médicaments, de rendez-vous, alerte plein écran.</li>
+  <li><b>Batterie et capteurs</b> : faire fonctionner la sortie surveillée (comptage des pas, détection d'arrêt brusque ou de chute) même écran éteint.</li>
+</ul>
+<p>Tu peux retirer chaque autorisation à tout moment dans les réglages du téléphone. Certaines fonctions ne marcheront alors plus.</p>
+
+<h2 id="fr-proches">5. Les proches</h2>
+<p>Le nom et le numéro des proches que tu ajoutes restent sur ton téléphone. Préviens-les qu'ils peuvent recevoir des SMS de Repère. L'appli peut leur envoyer un SMS de test pour qu'ils le sachent.</p>
+
+<h2 id="fr-site">6. Le site et le formulaire de contact</h2>
+<ul>
+  <li><b>Hébergement</b> : le site et le téléchargement sont hébergés par GitHub (GitHub Pages). GitHub peut enregistrer des informations techniques (adresse IP, navigateur) pour assurer le service et sa sécurité.</li>
+  <li><b>Aucun cookie, aucune mesure d'audience.</b> Seule la langue choisie est gardée dans ton navigateur.</li>
+  <li><b>Formulaire de contact</b> : il envoie ton profil, ton nom, ton e-mail, ton téléphone et ton organisation (s'ils sont remplis), ton message et ta langue à un formulaire Google Forms géré par Repère. Ils servent uniquement à te répondre et à organiser les tests. Base légale : ton consentement, que tu donnes en cochant la case. Google peut traiter ces données hors de l'Union européenne, dans le cadre des garanties prévues par le RGPD.</li>
+</ul>
+
+<h2 id="fr-duree">7. Durée de conservation</h2>
+<ul>
+  <li><b>Dans l'appli</b> : tant que tu les gardes. Tu peux tout effacer dans Réglages → « Tout effacer », ou en désinstallant l'appli.</li>
+  <li><b>Formulaire de contact</b> : au plus 2 ans après notre dernier échange, ou moins si tu le demandes.</li>
+</ul>
+
+<h2 id="fr-droits">8. Tes droits</h2>
+<p>Tu peux demander l'accès à tes données, leur correction, leur effacement, la limitation ou l'opposition à leur utilisation, et leur portabilité. Tu peux aussi retirer ton consentement à tout moment.</p>
+<p>Pour les données de l'appli, tu as tout en main : tu peux les consulter, les modifier, les exporter (Réglages → sauvegarde) ou les effacer toi-même. Pour le formulaire, écris à <a href="mailto:repere.contact.be@gmail.com">repere.contact.be@gmail.com</a> : nous répondons dans un délai d'un mois.</p>
+<p>Si tu penses que tes droits ne sont pas respectés, tu peux introduire une plainte auprès de l'<b>Autorité de protection des données</b> : rue de la Presse 35, 1000 Bruxelles · <a href="mailto:contact@apd-gba.be">contact@apd-gba.be</a> · +32 2 274 48 00 · <a href="https://www.autoriteprotectiondonnees.be">autoriteprotectiondonnees.be</a>.</p>
+
+<h2 id="fr-secu">9. Sécurité</h2>
+<p>Les données sont rangées dans l'espace privé de l'appli, inaccessible aux autres applis. L'appli peut être verrouillée par un code ou une empreinte. L'alerte, la fiche d'urgence et le débrief restent accessibles sans code, pour pouvoir servir en cas de crise. Protège aussi ton téléphone par un code de verrouillage : c'est la meilleure protection.</p>
+
+<h2 id="fr-mineurs">10. Mineurs</h2>
+<p>Pour une personne de moins de 16 ans, l'appli doit être installée et réglée avec un parent ou un adulte responsable.</p>
+
+<h2 id="fr-cond">11. Conditions d'utilisation</h2>
+<h3>Ce que Repère est, et ce qu'il n'est pas</h3>
+<ul>
+  <li>Repère est un carnet de suivi et un outil d'aide au quotidien pour les personnes qui ont des absences épileptiques et pour leurs proches.</li>
+  <li><b>Ce n'est pas un dispositif médical.</b> Il ne pose pas de diagnostic, ne propose pas de traitement et ne remplace jamais l'avis de ton médecin ou de ton neurologue. Ne change jamais ton traitement sans en parler avec lui.</li>
+  <li>Les chiffres, graphiques, prévisions (cycle, mode voyage) et tests de réaction sont des <b>indications</b> pour en parler avec ton médecin. La prévision des règles n'est pas une méthode de contraception.</li>
+</ul>
+<h3>Les limites de l'appli</h3>
+<ul>
+  <li>Les alertes, SMS, rappels et la sortie surveillée peuvent <b>ne pas fonctionner</b> : batterie vide ou économiseur d'énergie, pas de réseau, pas de crédit SMS, autorisation retirée, téléphone éteint ou réglé en silencieux, erreur de détection. La détection d'un arrêt brusque ou d'une chute n'est pas garantie.</li>
+  <li>Repère ne contacte pas les services de secours. <b>En cas d'urgence, appelle le 112.</b></li>
+  <li>Vérifie régulièrement que l'appli est prête (écran « Mon appli est prête ? ») et teste l'envoi des SMS avec tes proches.</li>
+</ul>
+<h3>Version de test</h3>
+<ul>
+  <li>Repère est actuellement fourni gratuitement à des testeurs, « tel quel », en cours d'amélioration. Des erreurs sont possibles : merci de les signaler.</li>
+  <li>Dans les limites permises par la loi, Repère ne peut être tenu responsable d'un dommage lié à une alerte non envoyée, un rappel manqué, une donnée perdue ou une mauvaise interprétation des informations de l'appli. Pense à exporter régulièrement une sauvegarde.</li>
+  <li>L'accès de testeur est personnel et peut être fermé si l'appli est utilisée de façon abusive.</li>
+</ul>
+<h3>Droit applicable</h3>
+<p>Ces conditions sont soumises au droit belge. En cas de désaccord, nous cherchons d'abord une solution à l'amiable par e-mail.</p>
+
+<h2 id="fr-modif">12. Modifications</h2>
+<p>Si ce texte change de façon importante, la date en haut de la page est mise à jour et l'appli te le présente à nouveau à accepter.</p>
+</article>
+
+<!-- ======================= NEDERLANDS ======================= -->
+<article lang="nl" data-lang="nl" hidden>
+<h1>Privacy en gebruiksvoorwaarden</h1>
+<p class="muted">App Repère en website repere-app.github.io · Versie van 6 november 2026</p>
+
+<div class="grid">
+  <div class="box soft"><b>Je gegevens blijven op je telefoon</b>Repère heeft geen server die je opvolging ontvangt. Niemand bij Repère kan ze lezen.</div>
+  <div class="box soft"><b>Geen account, geen reclame</b>Geen advertenties, geen trackers, geen verkoop van gegevens.</div>
+  <div class="box soft"><b>Jij beslist</b>Er vertrekt niets van je telefoon zonder een actie van jou of een instelling die je hebt aangezet (alarm-sms, pdf delen…).</div>
+</div>
+
+<div class="box warn"><b>Repère vervangt geen arts.</b> Het is geen medisch hulpmiddel: de app stelt geen diagnose en detecteert aanvallen niet gegarandeerd. Bel in een noodgeval 112.</div>
+
+<nav class="toc" aria-label="Inhoud">
+  <a href="#nl-qui">1. Wie is verantwoordelijk</a>
+  <a href="#nl-app">2. De gegevens in de app</a>
+  <a href="#nl-sortie">3. Wat de telefoon kan verlaten</a>
+  <a href="#nl-perm">4. De toestemmingen</a>
+  <a href="#nl-proches">5. Je naasten</a>
+  <a href="#nl-site">6. De website en het formulier</a>
+  <a href="#nl-duree">7. Bewaartermijn</a>
+  <a href="#nl-droits">8. Je rechten</a>
+  <a href="#nl-secu">9. Beveiliging</a>
+  <a href="#nl-mineurs">10. Minderjarigen</a>
+  <a href="#nl-cond">11. Gebruiksvoorwaarden</a>
+  <a href="#nl-modif">12. Wijzigingen</a>
+</nav>
+
+<h2 id="nl-qui">1. Wie is verantwoordelijk</h2>
+<p>Repère is een persoonlijk en gratis project, gemaakt in België door Alan Duroisin, samen met zijn gezin. Hij is verantwoordelijk voor de verwerking van de gegevens van de website en het contactformulier.</p>
+<p>Contact voor vragen over je gegevens: <a href="mailto:repere.contact.be@gmail.com">repere.contact.be@gmail.com</a>.</p>
+
+<h2 id="nl-app">2. De gegevens in de app</h2>
+<p>Wat je in Repère noteert, wordt <b>alleen in het privégeheugen van de app op je telefoon</b> bewaard:</p>
+<ul>
+  <li>je profiel: voornaam, gender, taal, instellingen;</li>
+  <li>je behandelingen: medicijnen, innametijden, aangevinkte innames, voorraad, geschiedenis van dosissen;</li>
+  <li>je absences: datum, uur, plaats, audio-opname, uitgeschreven tekst, context, verhaal van de getuige, hersteltests;</li>
+  <li>je opvolging: stress, slaap, menstruatiedagen (als je de cyclusopvolging aanzet), afspraken, vragen voor de arts, onderzoeken (EEG, MRI…);</li>
+  <li>de namen en nummers van de naasten die verwittigd worden.</li>
+</ul>
+<p>Veel van deze informatie zijn <b>gezondheidsgegevens</b>, die de AVG extra beschermt. Ze worden op je telefoon verwerkt, op jouw vraag, om je te helpen. Repère ontvangt ze niet, analyseert ze niet op afstand en deelt ze met niemand.</p>
+
+<h2 id="nl-sortie">3. Wat de telefoon kan verlaten</h2>
+<table>
+  <tr><th>Wanneer</th><th>Wat, en naar wie</th></tr>
+  <tr><td>Alarm, bewaakte uitstap, vergeten medicijn, test</td><td>Er wordt een sms gestuurd <b>naar de naasten die je gekozen hebt</b>, via je telefoonoperator. Die kan je locatie bevatten (Google Maps-link) en de naam van de plaats. Automatische sms'en kun je uitzetten in de Instellingen.</td></tr>
+  <tr><td>Uitschrijven van de gesproken debriefing</td><td>Waar mogelijk wordt de stem <b>op de telefoon</b> omgezet in tekst. Anders gebruikt Android de spraakherkenning van Google, die de audio ontvangt voor de omzetting.</td></tr>
+  <tr><td>Locatie (alarm, bewaakte uitstap, plaats van de absence)</td><td>Ze wordt bepaald via de locatiediensten van Google Play op je telefoon.</td></tr>
+  <tr><td>Back-up van de telefoon</td><td>Als de Google-back-up op je telefoon aan staat, kan Android de app-gegevens naar je Google-account kopiëren (versleuteld op recente Android-versies). Je kunt dat uitzetten in de instellingen van de telefoon.</td></tr>
+  <tr><td>Pdf-overzicht of back-up delen</td><td>Alleen als je op delen tikt, naar de app of persoon die jij kiest.</td></tr>
+  <tr><td>Toegangscontrole (testversie)</td><td>De app leest een openbare lijst op GitHub om te weten of de testtoegang nog open is. Er worden geen persoonsgegevens verstuurd; GitHub ziet alleen het internetadres van de telefoon, zoals bij elke webpagina.</td></tr>
+</table>
+<p>Deze diensten (operator, Google, GitHub) hebben hun eigen privacyregels.</p>
+
+<h2 id="nl-perm">4. De toestemmingen</h2>
+<ul>
+  <li><b>Microfoon</b>: de gesproken debriefing opnemen en, als je dat aanzet, de laatste minuten geluid bijhouden.</li>
+  <li><b>Locatie</b>: aangeven waar je bent in de alarm-sms en de plaats van de absence noteren.</li>
+  <li><b>Sms</b>: je naasten automatisch verwittigen.</li>
+  <li><b>Meldingen, alarmen, vergrendeld scherm</b>: herinneringen voor medicijnen en afspraken, alarm op volledig scherm.</li>
+  <li><b>Batterij en sensoren</b>: de bewaakte uitstap laten werken (stappen tellen, plotse stop of val detecteren), ook met het scherm uit.</li>
+</ul>
+<p>Je kunt elke toestemming altijd intrekken in de instellingen van de telefoon. Sommige functies werken dan niet meer.</p>
+
+<h2 id="nl-proches">5. Je naasten</h2>
+<p>De naam en het nummer van je naasten blijven op je telefoon. Laat hen weten dat ze sms'en van Repère kunnen krijgen. De app kan een test-sms sturen zodat ze het weten.</p>
+
+<h2 id="nl-site">6. De website en het contactformulier</h2>
+<ul>
+  <li><b>Hosting</b>: de website en de download worden gehost door GitHub (GitHub Pages). GitHub kan technische gegevens (IP-adres, browser) bijhouden voor de werking en de beveiliging.</li>
+  <li><b>Geen cookies, geen bezoekersmeting.</b> Alleen de gekozen taal wordt in je browser bewaard.</li>
+  <li><b>Contactformulier</b>: het stuurt je profiel, naam, e-mail, telefoon en organisatie (als je ze invult), je bericht en je taal naar een Google Forms-formulier van Repère. Ze dienen alleen om je te antwoorden en de tests te organiseren. Rechtsgrond: je toestemming, die je geeft door het vakje aan te vinken. Google kan deze gegevens buiten de Europese Unie verwerken, binnen de waarborgen van de AVG.</li>
+</ul>
+
+<h2 id="nl-duree">7. Bewaartermijn</h2>
+<ul>
+  <li><b>In de app</b>: zolang je ze bewaart. Je kunt alles wissen via Instellingen → « Alles wissen », of door de app te verwijderen.</li>
+  <li><b>Contactformulier</b>: maximaal 2 jaar na ons laatste contact, of korter als je dat vraagt.</li>
+</ul>
+
+<h2 id="nl-droits">8. Je rechten</h2>
+<p>Je kunt inzage, verbetering, wissing, beperking of bezwaar en overdraagbaarheid van je gegevens vragen. Je kunt je toestemming altijd intrekken.</p>
+<p>Voor de gegevens in de app heb je alles zelf in handen: bekijken, wijzigen, exporteren (Instellingen → back-up) of wissen. Voor het formulier schrijf je naar <a href="mailto:repere.contact.be@gmail.com">repere.contact.be@gmail.com</a>: we antwoorden binnen een maand.</p>
+<p>Denk je dat je rechten niet gerespecteerd worden, dan kun je klacht indienen bij de <b>Gegevensbeschermingsautoriteit</b>: Drukpersstraat 35, 1000 Brussel · <a href="mailto:contact@apd-gba.be">contact@apd-gba.be</a> · +32 2 274 48 00 · <a href="https://www.gegevensbeschermingsautoriteit.be">gegevensbeschermingsautoriteit.be</a>.</p>
+
+<h2 id="nl-secu">9. Beveiliging</h2>
+<p>De gegevens staan in de privéruimte van de app, die andere apps niet kunnen lezen. De app kan vergrendeld worden met een code of vingerafdruk. Het alarm, de noodfiche en de debriefing blijven zonder code bereikbaar, zodat ze bij een aanval kunnen dienen. Beveilig ook je telefoon met een schermvergrendeling: dat is de beste bescherming.</p>
+
+<h2 id="nl-mineurs">10. Minderjarigen</h2>
+<p>Voor iemand jonger dan 16 jaar moet de app geïnstalleerd en ingesteld worden samen met een ouder of verantwoordelijke volwassene.</p>
+
+<h2 id="nl-cond">11. Gebruiksvoorwaarden</h2>
+<h3>Wat Repère is, en wat niet</h3>
+<ul>
+  <li>Repère is een dagboek en een hulpmiddel voor elke dag, voor mensen met absence-epilepsie en hun naasten.</li>
+  <li><b>Het is geen medisch hulpmiddel.</b> Het stelt geen diagnose, stelt geen behandeling voor en vervangt nooit het advies van je arts of neuroloog. Pas je behandeling nooit aan zonder met hem of haar te praten.</li>
+  <li>Cijfers, grafieken, voorspellingen (cyclus, reismodus) en reactietests zijn <b>aanwijzingen</b> om met je arts te bespreken. De cyclusvoorspelling is geen voorbehoedsmethode.</li>
+</ul>
+<h3>De grenzen van de app</h3>
+<ul>
+  <li>Alarmen, sms'en, herinneringen en de bewaakte uitstap kunnen <b>falen</b>: lege batterij of energiebesparing, geen netwerk, geen sms-tegoed, ingetrokken toestemming, telefoon uit of op stil, detectiefout. De detectie van een plotse stop of val is niet gegarandeerd.</li>
+  <li>Repère belt geen hulpdiensten. <b>Bel in een noodgeval 112.</b></li>
+  <li>Controleer regelmatig of de app klaar is (scherm « Is mijn app klaar? ») en test de sms met je naasten.</li>
+</ul>
+<h3>Testversie</h3>
+<ul>
+  <li>Repère wordt momenteel gratis aan testers aangeboden, « zoals het is », en wordt nog verbeterd. Fouten zijn mogelijk: meld ze ons.</li>
+  <li>Binnen de grenzen van de wet kan Repère niet aansprakelijk gesteld worden voor schade door een niet-verstuurd alarm, een gemiste herinnering, verloren gegevens of een verkeerde interpretatie van de informatie in de app. Exporteer regelmatig een back-up.</li>
+  <li>De testtoegang is persoonlijk en kan worden afgesloten bij misbruik.</li>
+</ul>
+<h3>Toepasselijk recht</h3>
+<p>Deze voorwaarden vallen onder het Belgisch recht. Bij onenigheid zoeken we eerst een minnelijke oplossing per e-mail.</p>
+
+<h2 id="nl-modif">12. Wijzigingen</h2>
+<p>Als deze tekst belangrijk verandert, wordt de datum bovenaan aangepast en vraagt de app je opnieuw om akkoord te gaan.</p>
+</article>
+
+<!-- ======================= ENGLISH ======================= -->
+<article lang="en" data-lang="en" hidden>
+<h1>Privacy and terms of use</h1>
+<p class="muted">Repère app and website repere-app.github.io · Version of 6 November 2026</p>
+
+<div class="grid">
+  <div class="box soft"><b>Your data stays on your phone</b>Repère has no server that receives your records. Nobody at Repère can read them.</div>
+  <div class="box soft"><b>No account, no ads</b>No advertising, no trackers, no selling of data.</div>
+  <div class="box soft"><b>You decide</b>Nothing leaves the phone without an action from you or a setting you turned on (alert texts, sharing the PDF…).</div>
+</div>
+
+<div class="box warn"><b>Repère does not replace a doctor.</b> It is not a medical device: the app does not diagnose and does not reliably detect seizures. In an emergency, call 112.</div>
+
+<nav class="toc" aria-label="Contents">
+  <a href="#en-qui">1. Who is responsible</a>
+  <a href="#en-app">2. Data in the app</a>
+  <a href="#en-sortie">3. What can leave the phone</a>
+  <a href="#en-perm">4. Permissions</a>
+  <a href="#en-proches">5. Your loved ones</a>
+  <a href="#en-site">6. Website and contact form</a>
+  <a href="#en-duree">7. How long data is kept</a>
+  <a href="#en-droits">8. Your rights</a>
+  <a href="#en-secu">9. Security</a>
+  <a href="#en-mineurs">10. Minors</a>
+  <a href="#en-cond">11. Terms of use</a>
+  <a href="#en-modif">12. Changes</a>
+</nav>
+
+<h2 id="en-qui">1. Who is responsible</h2>
+<p>Repère is a personal, free project created in Belgium by Alan Duroisin with his family. He is the controller for the data of the website and the contact form.</p>
+<p>Contact for any question about your data: <a href="mailto:repere.contact.be@gmail.com">repere.contact.be@gmail.com</a>.</p>
+
+<h2 id="en-app">2. Data in the app</h2>
+<p>What you record in Repère is stored <b>only in the app's private storage on your phone</b>:</p>
+<ul>
+  <li>your profile: first name, gender, language, settings;</li>
+  <li>your treatments: medications, dose times, doses ticked, box stock, dose history;</li>
+  <li>your absences: date, time, place, audio recording, transcribed text, context, witness account, recovery tests;</li>
+  <li>your tracking: stress, sleep, period days (if you turn on cycle tracking), appointments, questions for the doctor, tests (EEG, MRI…);</li>
+  <li>the names and numbers of the loved ones to alert.</li>
+</ul>
+<p>Much of this is <b>health data</b>, which the GDPR protects in particular. It is processed on your phone, at your request, to help you. Repère does not receive it, does not analyse it remotely and does not share it with anyone.</p>
+
+<h2 id="en-sortie">3. What can leave the phone</h2>
+<table>
+  <tr><th>When</th><th>What, and to whom</th></tr>
+  <tr><td>Alert, guarded outing, missed medication, test</td><td>A text is sent <b>to the loved ones you chose</b>, through your phone operator. It may include your location (Google Maps link) and the name of the place. Automatic texts can be turned off in Settings.</td></tr>
+  <tr><td>Transcribing the voice debrief</td><td>When possible, speech is turned into text <b>on the phone</b>. Otherwise Android uses Google's speech recognition service, which receives the audio for the transcription.</td></tr>
+  <tr><td>Location (alert, guarded outing, place of the absence)</td><td>It comes from Google Play location services on your phone.</td></tr>
+  <tr><td>Phone backup</td><td>If Google backup is on, Android may copy the app's data to your Google account (encrypted on recent Android versions). You can turn it off in the phone's settings.</td></tr>
+  <tr><td>Sharing the PDF summary or a backup</td><td>Only when you tap share, to the app or person you choose.</td></tr>
+  <tr><td>Access check (test version)</td><td>The app reads a public list on GitHub to know whether tester access is still open. No personal data is sent; GitHub only sees the phone's internet address, as with any web page.</td></tr>
+</table>
+<p>These services (operator, Google, GitHub) have their own privacy rules.</p>
+
+<h2 id="en-perm">4. Permissions</h2>
+<ul>
+  <li><b>Microphone</b>: record the voice debrief and, if you turn it on, keep the last minutes of sound in memory.</li>
+  <li><b>Location</b>: say where you are in alert texts and note the place of the absence.</li>
+  <li><b>SMS</b>: alert your loved ones automatically.</li>
+  <li><b>Notifications, alarms, lock screen</b>: medication and appointment reminders, full-screen alert.</li>
+  <li><b>Battery and sensors</b>: keep the guarded outing working (counting steps, detecting a sudden stop or a fall) with the screen off.</li>
+</ul>
+<p>You can withdraw any permission at any time in the phone's settings. Some features will then stop working.</p>
+
+<h2 id="en-proches">5. Your loved ones</h2>
+<p>The names and numbers of your loved ones stay on your phone. Let them know they may receive texts from Repère. The app can send them a test text so they know.</p>
+
+<h2 id="en-site">6. Website and contact form</h2>
+<ul>
+  <li><b>Hosting</b>: the website and the download are hosted by GitHub (GitHub Pages). GitHub may log technical data (IP address, browser) to run and secure the service.</li>
+  <li><b>No cookies, no audience measurement.</b> Only your chosen language is kept in your browser.</li>
+  <li><b>Contact form</b>: it sends your profile, name, e-mail, phone and organisation (if filled in), your message and your language to a Google Forms form managed by Repère. They are used only to answer you and organise testing. Legal basis: your consent, given by ticking the box. Google may process this data outside the European Union, under the safeguards provided by the GDPR.</li>
+</ul>
+
+<h2 id="en-duree">7. How long data is kept</h2>
+<ul>
+  <li><b>In the app</b>: as long as you keep it. You can erase everything in Settings → "Erase everything", or by uninstalling the app.</li>
+  <li><b>Contact form</b>: at most 2 years after our last exchange, or less if you ask.</li>
+</ul>
+
+<h2 id="en-droits">8. Your rights</h2>
+<p>You can ask for access, correction, erasure, restriction or objection, and portability of your data. You can withdraw your consent at any time.</p>
+<p>For the data in the app, you are fully in control: view, edit, export (Settings → backup) or erase it yourself. For the form, write to <a href="mailto:repere.contact.be@gmail.com">repere.contact.be@gmail.com</a>: we reply within one month.</p>
+<p>If you believe your rights are not respected, you can file a complaint with the Belgian <b>Data Protection Authority</b>: Rue de la Presse 35, 1000 Brussels · <a href="mailto:contact@apd-gba.be">contact@apd-gba.be</a> · +32 2 274 48 00 · <a href="https://www.dataprotectionauthority.be">dataprotectionauthority.be</a>.</p>
+
+<h2 id="en-secu">9. Security</h2>
+<p>Data is kept in the app's private storage, which other apps cannot read. The app can be locked with a code or fingerprint. The alert, emergency card and debrief stay available without a code so they can help during a seizure. Also protect your phone with a screen lock: it is the best protection.</p>
+
+<h2 id="en-mineurs">10. Minors</h2>
+<p>For anyone under 16, the app must be installed and set up with a parent or responsible adult.</p>
+
+<h2 id="en-cond">11. Terms of use</h2>
+<h3>What Repère is, and is not</h3>
+<ul>
+  <li>Repère is a diary and an everyday helper for people with absence seizures and their loved ones.</li>
+  <li><b>It is not a medical device.</b> It does not diagnose, does not propose treatment and never replaces the advice of your doctor or neurologist. Never change your treatment without talking to them.</li>
+  <li>Numbers, charts, forecasts (cycle, travel mode) and reaction tests are <b>indications</b> to discuss with your doctor. The cycle forecast is not a contraception method.</li>
+</ul>
+<h3>Limits of the app</h3>
+<ul>
+  <li>Alerts, texts, reminders and the guarded outing may <b>fail</b>: flat battery or power saving, no network, no SMS credit, withdrawn permission, phone off or on silent, detection error. Detection of a sudden stop or fall is not guaranteed.</li>
+  <li>Repère does not call emergency services. <b>In an emergency, call 112.</b></li>
+  <li>Regularly check the app is ready ("Is my app ready?" screen) and test the texts with your loved ones.</li>
+</ul>
+<h3>Test version</h3>
+<ul>
+  <li>Repère is currently provided free of charge to testers, "as is", and is still being improved. Errors are possible: please report them.</li>
+  <li>To the extent permitted by law, Repère cannot be held liable for damage linked to an alert not sent, a missed reminder, lost data or a misreading of the app's information. Export a backup regularly.</li>
+  <li>Tester access is personal and may be closed in case of misuse.</li>
+</ul>
+<h3>Applicable law</h3>
+<p>These terms are governed by Belgian law. In case of disagreement, we first look for an amicable solution by e-mail.</p>
+
+<h2 id="en-modif">12. Changes</h2>
+<p>If this text changes significantly, the date at the top is updated and the app asks you to accept it again.</p>
+</article>
+
+</main>
+
+<footer>
+  <div class="wrap muted">
+    <p><a href="./" data-back>← Repère</a> · <a href="mailto:repere.contact.be@gmail.com">repere.contact.be@gmail.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var langs=["fr","nl","en"];
+  function setLang(l){
+    if(langs.indexOf(l)<0) l="fr";
+    document.documentElement.lang=l;
+    document.querySelectorAll("article[data-lang]").forEach(function(a){ a.hidden = a.getAttribute("data-lang")!==l; });
+    document.querySelectorAll(".langs button").forEach(function(b){ b.setAttribute("aria-pressed", b.getAttribute("data-l")===l ? "true" : "false"); });
+    document.title = {fr:"Repère · Confidentialité et conditions", nl:"Repère · Privacy en voorwaarden", en:"Repère · Privacy and terms"}[l];
+    try { localStorage.setItem("repere-lang", l); } catch(e) {}
+  }
+  document.querySelectorAll(".langs button").forEach(function(b){ b.addEventListener("click", function(){ setLang(b.getAttribute("data-l")); }); });
+  var h=location.hash.replace("#","").slice(0,2), start="";
+  if(langs.indexOf(h)>=0 && location.hash.length<=3) start=h;
+  if(!start){ try { start=localStorage.getItem("repere-lang")||""; } catch(e) {} }
+  if(!start){ var n=(navigator.language||"fr").slice(0,2); start = n==="nl"?"nl":n==="en"?"en":"fr"; }
+  if(location.hash.length>3){ var p=location.hash.slice(1,3); if(langs.indexOf(p)>=0) start=p; }
+  setLang(start);
+  if(location.hash.length>3){ var el=document.getElementById(location.hash.slice(1)); if(el) el.scrollIntoView(); }
+})();
+</script>
+</body>
+</html>
