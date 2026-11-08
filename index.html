@@ -220,7 +220,7 @@ footer .wrap{display:flex;flex-direction:column;gap:8px}
 <footer>
   <div class="wrap muted">
     <p data-t="foot1">Repère ne remplace pas l'avis d'un médecin. En cas d'urgence, appelle le 112.</p>
-    <p><a href="https://github.com/repere-app/repere-app#readme" data-t="foot2">Mode d'emploi pour les testeurs</a> · <a href="confidentialite.html" data-t="foot3">Confidentialité et conditions d'utilisation</a></p>
+    <p><a href="mode-emploi.html" data-t="foot2">Mode d'emploi pour les testeurs</a> · <a href="confidentialite.html" data-t="foot3">Confidentialité et conditions d'utilisation</a></p>
   </div>
 </footer>
 
@@ -244,6 +244,7 @@ function setLang(l){
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-t]").forEach(el => { const v = T[lang][el.dataset.t] ?? T.fr[el.dataset.t]; if (v != null) el.textContent = v; });
   document.querySelectorAll(".langs button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
+  document.querySelectorAll('a[href^="mode-emploi.html"]').forEach(a => { a.href = "mode-emploi.html#" + lang; });
   document.querySelectorAll('a[href^="confidentialite.html"]').forEach(a => { a.href = "confidentialite.html#" + lang + (a.dataset.sec ? "-" + a.dataset.sec : ""); });
   try { localStorage.setItem("repere-lang", lang); } catch(e) {}
 }

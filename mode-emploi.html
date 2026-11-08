@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repère · Mode d'emploi</title>
+<meta name="description" content="Installer, activer et utiliser l'application Repère : le mode d'emploi pour les testeurs.">
+<link rel="icon" type="image/svg+xml" href="img/icone.svg">
+<link rel="icon" type="image/png" sizes="512x512" href="img/icone-512.png">
+<meta name="theme-color" content="#17383A">
+<style>
+:root{
+  --bg:#F4F7F6; --surface:#FFFFFF; --line:#DCE5E2; --ink:#14302A; --muted:#4A5F5A;
+  --accent:#0F766E; --soft:#E3F2EE; --warn-soft:#FFF4E5; --alert:#C2410C;
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0E1A18; --surface:#172623; --line:#2A3D39; --ink:#E6F0EE; --muted:#A3B8B3;
+  --accent:#2BB3A0; --soft:#12352F; --warn-soft:#3A2414; --alert:#FB923C; color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6}
+.wrap{max-width:820px;margin:0 auto;padding:0 16px}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:2}
+header .wrap{display:flex;align-items:center;gap:12px;min-height:64px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--ink);text-decoration:none;margin-right:auto}
+.brand svg{width:32px;height:32px}
+.brand .base{fill:var(--ink)}
+.langs{display:flex;gap:6px}
+.langs button{font:inherit;font-size:14px;font-weight:700;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:18px;padding:6px 12px;cursor:pointer}
+.langs button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+main{padding:28px 0 48px}
+h1{font-size:30px;line-height:1.2;margin:0 0 6px}
+h2{font-size:22px;margin:36px 0 10px;padding-top:8px}
+h3{font-size:18px;margin:22px 0 6px}
+p,li{margin:0 0 10px}
+ul{padding-left:22px;margin:0 0 12px}
+.muted{color:var(--muted)}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 20px;margin:16px 0}
+.box.soft{background:var(--soft);border-color:transparent}
+.step{display:flex;gap:14px;align-items:flex-start;margin:14px 0}
+.step .num{flex:0 0 34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.step div p:last-child{margin-bottom:0}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:30px;margin:6px 0 4px}
+.box.warn{background:var(--warn-soft);border-color:transparent}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0}
+.grid .box{margin:0}
+.grid b{display:block;margin-bottom:4px}
+table{width:100%;border-collapse:collapse;margin:8px 0 14px;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:9px 8px;border-bottom:1px solid var(--line)}
+th{font-weight:700}
+a{color:var(--accent)}
+nav.toc{columns:2;column-gap:24px;font-size:15px}
+nav.toc a{display:block;padding:2px 0}
+@media (max-width:560px){nav.toc{columns:1} h1{font-size:26px} table{font-size:14px}}
+article[hidden]{display:none}
+footer{border-top:1px solid var(--line);padding:20px 0 32px;font-size:15px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="./"><svg viewBox="0 0 200 200" aria-hidden="true"><g transform="translate(0,-13)"><ellipse class="base" cx="100" cy="152" rx="58" ry="24"/><ellipse cx="96" cy="102" rx="40" ry="20" fill="#FF8B5E" transform="rotate(-6 96 102)"/><ellipse cx="104" cy="64" rx="24" ry="14" fill="#FFB547" transform="rotate(8 104 64)"/></g></svg>Repère</a>
+    <div class="langs" role="group" aria-label="Langue / Taal / Language">
+      <button data-l="fr">FR</button><button data-l="nl">NL</button><button data-l="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+<article lang="fr" data-lang="fr">
+<h1>Mode d'emploi pour les testeurs</h1>
+<p class="muted">Installer, activer et bien utiliser Repère · Android 8 ou plus récent</p>
+<p><a class="btn" href="https://github.com/repere-app/repere-app/raw/main/Repere.apk">⬇ Télécharger Repère</a></p>
+<nav class="toc">
+  <a href="#fr-install">1. Installer l'appli</a>
+  <a href="#fr-activer">2. Activer ton accès</a>
+  <a href="#fr-guide">3. Le démarrage guidé</a>
+  <a href="#fr-gestes">4. Les gestes essentiels</a>
+  <a href="#fr-pret">5. Vérifier que tout est prêt</a>
+  <a href="#fr-rapide">6. Les accès rapides</a>
+  <a href="#fr-maj">7. Mettre à jour</a>
+  <a href="#fr-probleme">8. Un problème ?</a>
+</nav>
+<h2 id="fr-install">1. Installer l'appli</h2>
+<div class="step"><span class="num">1</span><div><h3>Télécharge le fichier</h3><p>Sur ton téléphone Android, appuie sur le bouton ci-dessus. Si Chrome affiche « Ce type de fichier peut être dangereux », appuie sur <b>Télécharger quand même</b> : c'est normal pour une appli qui n'est pas encore sur le Play Store.</p></div></div>
+<div class="step"><span class="num">2</span><div><h3>Ouvre le fichier</h3><p>Ouvre la notification de téléchargement, ou le dossier Téléchargements, et touche <b>Repere.apk</b>.</p></div></div>
+<div class="step"><span class="num">3</span><div><h3>Autorise l'installation</h3><p>La première fois, Android demande d'autoriser l'installation d'applis depuis ton navigateur : touche <b>Paramètres</b>, active <b>Autoriser depuis cette source</b>, puis reviens en arrière.</p></div></div>
+<div class="step"><span class="num">4</span><div><h3>Installe</h3><p>Touche <b>Installer</b>. Si Play Protect affiche un avertissement, choisis <b>Plus de détails</b> puis <b>Installer quand même</b>.</p></div></div>
+<h2 id="fr-activer">2. Activer ton accès</h2>
+<div class="step"><span class="num">1</span><div><h3>Ton code appareil</h3><p>À la première ouverture, Repère affiche un <b>code appareil</b> propre à ton téléphone. Envoie-le à l'équipe Repère avec le bouton prévu.</p></div></div>
+<div class="step"><span class="num">2</span><div><h3>Ton accès</h3><p>L'équipe te renvoie un <b>nom de profil</b>, un <b>code d'accès</b> et un <b>mot de passe</b>. Recopie le nom exactement comme il t'a été communiqué.</p></div></div>
+<div class="step"><span class="num">3</span><div><h3>Ton code PIN</h3><p>Choisis un code de 4 à 6 chiffres (ou ton empreinte). L'alerte, la fiche d'urgence et le débrief restent toujours accessibles sans code.</p></div></div>
+<p class="muted">Le code d'accès ne marche que pour ce nom et ce téléphone : il ne peut pas être partagé.</p>
+<h2 id="fr-guide">3. Le démarrage guidé</h2>
+<p>Juste après l'activation, Repère te guide en 2 minutes : langue, prénom et genre, tes médicaments, un proche à prévenir (avec un SMS de test), les autorisations, puis la confidentialité à accepter. Tu peux le revoir plus tard dans <b>Réglages → Revoir le démarrage guidé</b>.</p>
+<h2 id="fr-gestes">4. Les gestes essentiels</h2>
+<div class="grid">
+<div class="box"><b>Après une absence</b>Appuie sur le grand bouton <b>Je viens d'avoir une absence</b> de l'accueil et raconte à voix haute. Repère note l'heure, le lieu, écrit le texte, et te propose un test de récupération de 20 secondes.</div>
+<div class="box"><b>Tes médicaments</b>À l'heure, une alarme sonne. Touche <b>Pris</b> : la gélule s'ouvre et devient un ✓. Sans réponse, elle passe à l'orange puis au rouge après 1 h, et un proche peut être prévenu.</div>
+<div class="box"><b>Ta journée</b>Note ton stress et ton sommeil d'un geste dans « Ma journée ». Le suivi et le graphique montrent ce qui revient.</div>
+<div class="box"><b>Sortir seul ou seule</b>Dans l'onglet <b>Sortie</b>, lance la sortie surveillée : en cas d'arrêt brusque ou de chute, Repère demande « Tout va bien ? » puis prévient tes proches si tu ne réponds pas.</div>
+<div class="box"><b>Chez le médecin</b>Dans <b>Ma consultation</b>, note tes questions, tes rendez-vous, et crée le résumé PDF pour ton neurologue.</div>
+<div class="box"><b>En cas de besoin</b>Le bouton <b>Alerter mes proches</b> prévient tes proches tout de suite avec ta position. En cas d'urgence, appelle le 112.</div>
+</div>
+<h2 id="fr-pret">5. Vérifier que tout est prêt</h2>
+<div class="box soft">Ouvre <b>Réglages → Mon appli est prête ?</b>. Chaque vérification passe au vert quand tout est bon (autorisations, batterie, contacts…). Tu peux y tester le SMS, la sirène et la sortie surveillée <b>sans alerter personne</b>. Fais-le une fois après l'installation, puis après chaque mise à jour.</div>
+<h2 id="fr-rapide">6. Les accès rapides</h2>
+<ul>
+<li><b>Widgets</b> : Appuie longuement sur l'écran d'accueil du téléphone → Widgets → Repère.</li>
+<li><b>Tuile « Absence »</b> : Tire le menu du haut de l'écran, touche le crayon et ajoute la tuile Absence.</li>
+<li><b>Commande vocale</b> : Active-la dans Réglages, puis dis « Ok Google, ouvre Absence Repère ».</li>
+</ul>
+<h2 id="fr-maj">7. Mettre à jour</h2>
+<div class="box warn">Quand une nouvelle version sort, télécharge-la avec le même bouton et installe-la <b>par-dessus</b> l'ancienne : tes données sont gardées. <b>Ne désinstalle pas</b> Repère avant, sinon tout ce que tu as noté est effacé. Par précaution, fais de temps en temps une sauvegarde dans les Réglages. Le numéro de ta version est affiché en bas des Réglages.</div>
+<h2 id="fr-probleme">8. Un problème ?</h2>
+<p>Écris à <a href="mailto:repere.contact.be@gmail.com">repere.contact.be@gmail.com</a> en indiquant le modèle de ton téléphone, ta version de Repère (en bas des Réglages) et ce qui s'est passé. Une capture d'écran aide beaucoup.</p>
+<p class="muted"><a href="confidentialite.html#fr">Confidentialité et conditions</a></p>
+</article>
+
+<article lang="nl" data-lang="nl" hidden>
+<h1>Handleiding voor testers</h1>
+<p class="muted">Repère installeren, activeren en goed gebruiken · Android 8 of nieuwer</p>
+<p><a class="btn" href="https://github.com/repere-app/repere-app/raw/main/Repere.apk">⬇ Repère downloaden</a></p>
+<nav class="toc">
+  <a href="#nl-install">1. De app installeren</a>
+  <a href="#nl-activer">2. Je toegang activeren</a>
+  <a href="#nl-guide">3. De rondleiding</a>
+  <a href="#nl-gestes">4. De belangrijkste handelingen</a>
+  <a href="#nl-pret">5. Controleren of alles klaar is</a>
+  <a href="#nl-rapide">6. Snelle toegang</a>
+  <a href="#nl-maj">7. Bijwerken</a>
+  <a href="#nl-probleme">8. Een probleem?</a>
+</nav>
+<h2 id="nl-install">1. De app installeren</h2>
+<div class="step"><span class="num">1</span><div><h3>Download het bestand</h3><p>Tik op je Android-telefoon op de knop hierboven. Toont Chrome « Dit type bestand kan schadelijk zijn », tik dan op <b>Toch downloaden</b>: dat is normaal voor een app die nog niet in de Play Store staat.</p></div></div>
+<div class="step"><span class="num">2</span><div><h3>Open het bestand</h3><p>Open de downloadmelding of de map Downloads en tik op <b>Repere.apk</b>.</p></div></div>
+<div class="step"><span class="num">3</span><div><h3>Sta de installatie toe</h3><p>De eerste keer vraagt Android om installaties vanuit je browser toe te staan: tik op <b>Instellingen</b>, zet <b>Toestaan van deze bron</b> aan en ga terug.</p></div></div>
+<div class="step"><span class="num">4</span><div><h3>Installeer</h3><p>Tik op <b>Installeren</b>. Toont Play Protect een waarschuwing, kies dan <b>Meer details</b> en <b>Toch installeren</b>.</p></div></div>
+<h2 id="nl-activer">2. Je toegang activeren</h2>
+<div class="step"><span class="num">1</span><div><h3>Je toestelcode</h3><p>Bij de eerste opening toont Repère een <b>toestelcode</b> die bij je telefoon hoort. Stuur die naar het Repère-team met de knop.</p></div></div>
+<div class="step"><span class="num">2</span><div><h3>Je toegang</h3><p>Het team stuurt je een <b>profielnaam</b>, een <b>toegangscode</b> en een <b>wachtwoord</b>. Neem de naam precies over zoals hij werd meegedeeld.</p></div></div>
+<div class="step"><span class="num">3</span><div><h3>Je pincode</h3><p>Kies een code van 4 tot 6 cijfers (of je vingerafdruk). Alarm, noodfiche en debriefing blijven altijd zonder code bereikbaar.</p></div></div>
+<p class="muted">De toegangscode werkt enkel voor deze naam en deze telefoon: hij kan niet gedeeld worden.</p>
+<h2 id="nl-guide">3. De rondleiding</h2>
+<p>Meteen na de activatie leidt Repère je in 2 minuten rond: taal, voornaam en gender, je medicijnen, een naaste om te verwittigen (met een test-sms), de toestemmingen en de privacy om te aanvaarden. Je kunt dit later opnieuw bekijken via <b>Instellingen → De rondleiding opnieuw bekijken</b>.</p>
+<h2 id="nl-gestes">4. De belangrijkste handelingen</h2>
+<div class="grid">
+<div class="box"><b>Na een absence</b>Tik op de grote knop <b>Ik had net een absence</b> op het startscherm en vertel hardop. Repère noteert uur en plaats, schrijft de tekst uit en stelt een hersteltest van 20 seconden voor.</div>
+<div class="box"><b>Je medicijnen</b>Op het uur gaat een alarm af. Tik op <b>Genomen</b>: de capsule gaat open en wordt een ✓. Zonder antwoord wordt ze oranje, na 1 uur rood, en kan een naaste verwittigd worden.</div>
+<div class="box"><b>Je dag</b>Noteer je stress en slaap met één gebaar in « Mijn dag ». De opvolging en de grafiek tonen wat terugkomt.</div>
+<div class="box"><b>Alleen op pad</b>Start in het tabblad <b>Weggaan</b> de bewaakte uitstap: bij een plotse stop of val vraagt Repère « Alles goed? » en verwittigt je naasten als je niet antwoordt.</div>
+<div class="box"><b>Bij de arts</b>Noteer in <b>Mijn consultatie</b> je vragen en afspraken en maak het pdf-overzicht voor je neuroloog.</div>
+<div class="box"><b>Als het nodig is</b>De knop <b>Mijn naasten alarmeren</b> verwittigt je naasten meteen met je locatie. Bel in een noodgeval 112.</div>
+</div>
+<h2 id="nl-pret">5. Controleren of alles klaar is</h2>
+<div class="box soft">Open <b>Instellingen → Is mijn app klaar?</b>. Elke controle wordt groen als alles in orde is (toestemmingen, batterij, contacten…). Je kunt er de sms, de sirene en de bewaakte uitstap testen <b>zonder iemand te alarmeren</b>. Doe dit één keer na de installatie en na elke update.</div>
+<h2 id="nl-rapide">6. Snelle toegang</h2>
+<ul>
+<li><b>Widgets</b>: Houd het startscherm van je telefoon ingedrukt → Widgets → Repère.</li>
+<li><b>Tegel « Absence »</b>: Trek het menu bovenaan naar beneden, tik op het potlood en voeg de tegel Absence toe.</li>
+<li><b>Spraakopdracht</b>: Zet ze aan in Instellingen en zeg « Hey Google, open Absence Repère ».</li>
+</ul>
+<h2 id="nl-maj">7. Bijwerken</h2>
+<div class="box warn">Komt er een nieuwe versie, download ze dan met dezelfde knop en installeer ze <b>over</b> de oude heen: je gegevens blijven bewaard. <b>Verwijder</b> Repère niet eerst, anders wordt alles gewist. Maak voor de zekerheid af en toe een back-up in de Instellingen. Je versienummer staat onderaan in de Instellingen.</div>
+<h2 id="nl-probleme">8. Een probleem?</h2>
+<p>Schrijf naar <a href="mailto:repere.contact.be@gmail.com">repere.contact.be@gmail.com</a> met het model van je telefoon, je versie van Repère (onderaan in de Instellingen) en wat er gebeurde. Een schermafbeelding helpt veel.</p>
+<p class="muted"><a href="confidentialite.html#nl">Privacy en voorwaarden</a></p>
+</article>
+
+<article lang="en" data-lang="en" hidden>
+<h1>User guide for testers</h1>
+<p class="muted">Install, activate and use Repère · Android 8 or newer</p>
+<p><a class="btn" href="https://github.com/repere-app/repere-app/raw/main/Repere.apk">⬇ Download Repère</a></p>
+<nav class="toc">
+  <a href="#en-install">1. Install the app</a>
+  <a href="#en-activer">2. Activate your access</a>
+  <a href="#en-guide">3. The guided setup</a>
+  <a href="#en-gestes">4. The essentials</a>
+  <a href="#en-pret">5. Check everything is ready</a>
+  <a href="#en-rapide">6. Quick access</a>
+  <a href="#en-maj">7. Updating</a>
+  <a href="#en-probleme">8. A problem?</a>
+</nav>
+<h2 id="en-install">1. Install the app</h2>
+<div class="step"><span class="num">1</span><div><h3>Download the file</h3><p>On your Android phone, tap the button above. If Chrome says « This type of file can harm your device », tap <b>Download anyway</b>: that's normal for an app not yet on the Play Store.</p></div></div>
+<div class="step"><span class="num">2</span><div><h3>Open the file</h3><p>Open the download notification or the Downloads folder and tap <b>Repere.apk</b>.</p></div></div>
+<div class="step"><span class="num">3</span><div><h3>Allow the installation</h3><p>The first time, Android asks you to allow installs from your browser: tap <b>Settings</b>, turn on <b>Allow from this source</b>, then go back.</p></div></div>
+<div class="step"><span class="num">4</span><div><h3>Install</h3><p>Tap <b>Install</b>. If Play Protect shows a warning, choose <b>More details</b> then <b>Install anyway</b>.</p></div></div>
+<h2 id="en-activer">2. Activate your access</h2>
+<div class="step"><span class="num">1</span><div><h3>Your device code</h3><p>On first launch, Repère shows a <b>device code</b> unique to your phone. Send it to the Repère team with the button provided.</p></div></div>
+<div class="step"><span class="num">2</span><div><h3>Your access</h3><p>The team sends you a <b>profile name</b>, an <b>access code</b> and a <b>password</b>. Type the name exactly as given.</p></div></div>
+<div class="step"><span class="num">3</span><div><h3>Your PIN</h3><p>Choose a 4 to 6-digit code (or your fingerprint). The alert, emergency card and debrief always stay available without a code.</p></div></div>
+<p class="muted">The access code only works for this name and this phone: it cannot be shared.</p>
+<h2 id="en-guide">3. The guided setup</h2>
+<p>Right after activation, Repère guides you in 2 minutes: language, first name and gender, your medication, a loved one to alert (with a test text), permissions, then the privacy terms to accept. You can see it again later in <b>Settings → See the guided setup again</b>.</p>
+<h2 id="en-gestes">4. The essentials</h2>
+<div class="grid">
+<div class="box"><b>After an absence</b>Tap the big <b>I just had an absence</b> button on the home screen and speak. Repère notes the time and place, writes the text and offers a 20-second recovery test.</div>
+<div class="box"><b>Your medication</b>On time, an alarm rings. Tap <b>Taken</b>: the capsule opens and turns into a ✓. Without an answer it turns orange, then red after 1 hour, and a loved one can be alerted.</div>
+<div class="box"><b>Your day</b>Note your stress and sleep in one gesture in « My day ». Tracking and the chart show what keeps coming back.</div>
+<div class="box"><b>Going out alone</b>In the <b>Going out</b> tab, start the guarded outing: after a sudden stop or a fall, Repère asks « Are you OK? » and alerts your loved ones if you don't answer.</div>
+<div class="box"><b>At the doctor's</b>In <b>My appointment</b>, note your questions and appointments and create the PDF summary for your neurologist.</div>
+<div class="box"><b>When needed</b>The <b>Alert my contacts</b> button alerts your loved ones straight away with your location. In an emergency, call 112.</div>
+</div>
+<h2 id="en-pret">5. Check everything is ready</h2>
+<div class="box soft">Open <b>Settings → Is my app ready?</b>. Each check turns green when everything is fine (permissions, battery, contacts…). You can test the text, the siren and the guarded outing there <b>without alerting anyone</b>. Do it once after installing, and after each update.</div>
+<h2 id="en-rapide">6. Quick access</h2>
+<ul>
+<li><b>Widgets</b>: Press and hold your phone's home screen → Widgets → Repère.</li>
+<li><b>« Absence » tile</b>: Pull down the top menu, tap the pencil and add the Absence tile.</li>
+<li><b>Voice command</b>: Turn it on in Settings, then say « Hey Google, open Absence Repère ».</li>
+</ul>
+<h2 id="en-maj">7. Updating</h2>
+<div class="box warn">When a new version comes out, download it with the same button and install it <b>over</b> the old one: your data is kept. <b>Don't uninstall</b> Repère first, or everything you noted is erased. To be safe, export a backup in Settings now and then. Your version number is shown at the bottom of Settings.</div>
+<h2 id="en-probleme">8. A problem?</h2>
+<p>Write to <a href="mailto:repere.contact.be@gmail.com">repere.contact.be@gmail.com</a> with your phone model, your Repère version (bottom of Settings) and what happened. A screenshot helps a lot.</p>
+<p class="muted"><a href="confidentialite.html#en">Privacy and terms</a></p>
+</article>
+</main>
+
+<footer>
+  <div class="wrap muted">
+    <p><a href="./" data-back>← Repère</a> · <a href="mailto:repere.contact.be@gmail.com">repere.contact.be@gmail.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var langs=["fr","nl","en"];
+  function setLang(l){
+    if(langs.indexOf(l)<0) l="fr";
+    document.documentElement.lang=l;
+    document.querySelectorAll("article[data-lang]").forEach(function(a){ a.hidden = a.getAttribute("data-lang")!==l; });
+    document.querySelectorAll(".langs button").forEach(function(b){ b.setAttribute("aria-pressed", b.getAttribute("data-l")===l ? "true" : "false"); });
+    document.title = {fr:"Repère · Mode d'emploi", nl:"Repère · Handleiding", en:"Repère · User guide"}[l];
+    try { localStorage.setItem("repere-lang", l); } catch(e) {}
+  }
+  document.querySelectorAll(".langs button").forEach(function(b){ b.addEventListener("click", function(){ setLang(b.getAttribute("data-l")); }); });
+  var h=location.hash.replace("#","").slice(0,2), start="";
+  if(langs.indexOf(h)>=0 && location.hash.length<=3) start=h;
+  if(!start){ try { start=localStorage.getItem("repere-lang")||""; } catch(e) {} }
+  if(!start){ var n=(navigator.language||"fr").slice(0,2); start = n==="nl"?"nl":n==="en"?"en":"fr"; }
+  if(location.hash.length>3){ var p=location.hash.slice(1,3); if(langs.indexOf(p)>=0) start=p; }
+  setLang(start);
+  if(location.hash.length>3){ var el=document.getElementById(location.hash.slice(1)); if(el) el.scrollIntoView(); }
+})();
+</script>
+</body>
+</html>
