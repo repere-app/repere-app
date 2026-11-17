@@ -286,5 +286,9 @@ $("f").addEventListener("submit", async e => {
   }
 });
 </script>
+<script>
+/* lien toujours vers la dernière version : évite que le téléphone ou le serveur resservent un ancien APK gardé en mémoire */
+document.querySelectorAll('a[href$="Repere.apk"]').forEach(function(a){a.href=a.href+'?v='+Date.now();});
+</script>
 </body>
 </html>

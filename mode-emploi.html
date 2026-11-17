@@ -248,5 +248,9 @@ footer{border-top:1px solid var(--line);padding:20px 0 32px;font-size:15px}
   if(location.hash.length>3){ var el=document.getElementById(location.hash.slice(1)); if(el) el.scrollIntoView(); }
 })();
 </script>
+<script>
+/* lien toujours vers la dernière version : évite que le téléphone ou le serveur resservent un ancien APK gardé en mémoire */
+document.querySelectorAll('a[href$="Repere.apk"]').forEach(function(a){a.href=a.href+'?v='+Date.now();});
+</script>
 </body>
 </html>
